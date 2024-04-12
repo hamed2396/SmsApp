@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/sendSmsFragment">
+
+    <fragment
+        android:id="@+id/sendSmsFragment"
+        android:name="com.example.smsapp.ui.sendFragment.SendSmsFragment"
+        android:label="fragment_send_sms"
+        tools:layout="@layout/fragment_send_sms" >
+        <action
+            android:id="@+id/actionSendToReceive"
+            app:destination="@id/receiveSmsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/receiveSmsFragment"
+        android:name="com.example.smsapp.ui.receiveFragment.ReceiveSmsFragment"
+        android:label="fragment_receive_sms"
+        tools:layout="@layout/fragment_receive_sms" />
+</navigation>
