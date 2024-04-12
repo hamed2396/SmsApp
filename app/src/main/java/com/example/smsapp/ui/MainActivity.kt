@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
         launchLifeCycle {
             saveNumberStore.getNumber().collect {
                 Constants.number = it
+
             }
         }
 
